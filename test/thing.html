@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+    <script>
+        function waitAndExecute() {
+            setTimeout(function() {
+                window.open("/coolguygame/", "_blank", 'menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes');
 
-<h1>use</h1>
-<h2>to open</h2>
-
-<p>a</p>
-
-<button onclick="thing()">ok</button>
-
-<script>
-function thing() {
-  window.open("/coolguygame/", "_blank", 'menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes');
-}
-</script>
-
+            }, 500);
+        }
+    </script>
+</head>
+<body onload="waitAndExecute()">
 </body>
 </html>
